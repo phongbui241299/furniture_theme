@@ -1,0 +1,168 @@
+@import "color";
+.btn {
+    padding: 1rem 2rem;
+    display: inline-block;
+    &-primary {
+        display: inline-flex;
+        align-items: center;
+        background-color: $color2;
+        color: white;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0.04em;
+        text-transform: capitalize;
+        vertical-align: center;
+        border: none;
+        &:hover {
+            background-color: $color1;
+            color: #fff;
+            text-decoration: none;
+            svg {
+                //stroke: #fff;
+                //fill: #fff;
+            }
+            path {
+                fill: #fff;
+            }
+        }
+    }
+    &-secondary {
+        display: block;
+        color: $color1;
+        background-color: #fff;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 21px;
+        text-align: center;
+        padding-right: 4rem;
+        padding-left: 4rem;
+        max-width: 260px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        &:hover {
+            background-color: $color1;
+            color: white;
+        }
+    }
+    &-mini {
+        //background-color: $color_4;
+        padding: 5px 10px!important;
+        //font-family: $font_1;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 10px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        //@include transition;
+        &:hover {
+            background-color: rgba(#000, 0.5);
+            color: #FFFFFF;
+        }
+    }
+    &-a {
+        //background-color: $color_4;
+        color: #fff;
+        //border: 1px solid $color_4;
+        font-style: normal;
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 130%;
+        letter-spacing: 0.1em;
+        cursor: pointer;
+        text-transform: uppercase;
+        svg,
+        path {
+            //@include transition;
+        }
+        &:hover {
+            background-color: #fff;
+            //color: $color_4;
+            svg,
+            path {
+                //fill: $color_4;
+            }
+        }
+        &.big {
+            padding: 1rem 2rem;
+        }
+        &.medium {
+            padding: 0.8rem 1rem;
+        }
+    }
+    &-b {
+        background-color: #fff;
+        //color: $color_4;
+        //border: 1px solid $color_4;
+        font-style: normal;
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 130%;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        svg,
+        path {
+            //@include transition;
+        }
+        &:hover {
+            background-color: #fff;
+            //color: $color_4;
+            svg,
+            path {
+                //fill: $color_4;
+            }
+        }
+        &.big {
+            padding: 1rem 2rem;
+        }
+    }
+    &-submit {
+        background-color: $color1;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 130%;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: 1rem 2rem 1rem 3rem;
+        border: none;
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        background-position: left 25px center;
+        cursor: pointer;
+        &:hover {
+            background-color: $color1;
+        }
+    }
+}
+
+.button_search {
+    background-color: $color1;
+    outline: lightgray;
+}
+
+.hover-link {
+    color: white;
+    font-size: 30px;
+    z-index: 2;
+    font-weight: 500;
+}
+
+.button_send {
+    outline: auto;
+    width: 130px;
+    height: 40px;
+    background-color: $color4;
+    color: #ffff;
+    &:hover {
+        background-color: $color1;
+        outline: auto;
+        transition: all 0.2s ease-in-out;
+    }
+}
